@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-slate-500 font-sans flex flex-col min-h-screen ">
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
