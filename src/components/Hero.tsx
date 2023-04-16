@@ -3,14 +3,17 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex  flex-col h-full justify-center w-full gap-10  items-center">
-      <div className="flex flex-col font-semibold gap-5 items-center mt-11">
-        <h1 className="text-6xl  ">Draw Your Ideas</h1>
-        <span className="text-6xl bg-gradient-to-r text-transparent bg-clip-text from-violet-500 to-blue-500">
-          With AI
+    <div className="flex  flex-col  h-full justify-center w-full gap-4  items-center">
+      <h1 className={"text-7xl font-semibold text-center max-w-2xl mt-8 mb-3"}>
+        Transform your Drawings{" "}
+        <span className="bg-gradient-to-r text-transparent bg-clip-text from-violet-500 to-blue-500">
+          with AI
         </span>
-      </div>
-      <p className="text-xl">Just draw and see the magic</p>
+      </h1>
+      <p className="text-lg max-w-2xl text-center">
+        Transform your drawings and images into real-life creations with Draw AI
+        - the ultimate online art creator tool
+      </p>
       <Link href="/draw">
         <button
           type="button"
