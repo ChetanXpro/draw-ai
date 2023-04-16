@@ -32,7 +32,7 @@ const VibeDescriptionPrefixes: any = {
   painting: "A painting of ",
 };
 
-export default async function handler(request, respone) {
+export default async function handler(request: any, respone: any) {
   if (request.method === "GET") {
     return respone.status(200).json({ message: "hello" });
   }

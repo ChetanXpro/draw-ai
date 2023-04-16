@@ -6,7 +6,8 @@ import { UploadDropzone } from "react-uploader";
 import { ReactSketchCanvas, ReactSketchCanvasRef } from "react-sketch-canvas";
 import { Uploader } from "uploader";
 import Image from "next/image";
-function draw() {
+
+function Draw() {
   const [drawOrUpload, setDrawOrUpload] = useState(false);
   const [vibe, setVibe] = useState<string>("ultra-realistic");
   const canvasRef = useRef<ReactSketchCanvasRef | null>(null);
@@ -220,4 +221,4 @@ function draw() {
   );
 }
 
-export default draw;
+export default Draw;
