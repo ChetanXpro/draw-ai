@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -22,6 +23,33 @@ const Hero = () => {
           Draw Idea
         </button>
       </Link>
+      <div className="flex gap-4 mt-4">
+        <div className="flex flex-col gap-2">
+          <Image
+            alt="Original Dog"
+            src="/drawing.jpeg"
+            className="rounded-md border border-slate-300"
+            width={256}
+            height={256}
+          />
+          <span className="font-medium text-sm text-center">
+            Original Photo
+          </span>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <Image
+            alt="Generated Dog"
+            src="/output.png"
+            className="rounded-md border border-slate-300"
+            width={256}
+            height={256}
+          />
+          <span className="font-medium text-sm text-center">
+            Generated Photo
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
